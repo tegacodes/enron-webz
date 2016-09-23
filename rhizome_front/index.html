@@ -1,0 +1,130 @@
+<html>
+
+<head>
+  <title></title>
+  <style>
+    body {
+      font: 15px Tahoma, Verdana;
+      background-color: #eee;
+      /* background: url('https://i.ytimg.com/vi/HQbCss5APuo/maxresdefault.jpg'); */
+      /*   background-size:cover; */
+      background: url('http://vignette2.wikia.nocookie.net/logopedia/images/9/95/Enron_logo.svg/revision/latest?cb=20100721175834');
+
+      font-smooth: never;
+      -webkit-font-smoothing: none;
+    }
+    label {
+      display: block;
+    }
+    #timeline-options {
+      margin-top: 15px;
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    input[type="radio"] + label span {
+      width: 24px;
+      height: 22px;
+      display: inline-block;
+      background: url('radio.gif') no-repeat 0 0;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    input[type="radio"]:checked + label span {
+      background: url('radio_checked.gif') no-repeat 0 0;
+    }
+    input[type="email"] {
+      box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 1), inset 0 1px 1px rgba(0, 0, 0, 1);
+      outline-width: 0;
+      width: 100%;
+      height: 30px;
+      padding: 5px;
+    }
+    input[type="submit"] {
+      background: #b0b0b0;
+      border: 1px solid #000;
+      border-top-color: #dfdfdf;
+      border-left-color: #dfdfdf;
+      border-right-color: #808080;
+      border-bottom-color: #808080;
+      box-shadow: 1px 1px 0 0 #000;
+      text-align: center;
+      outline: none;
+      padding: 4px;
+      cursor: default;
+      font-size: 15px;
+    }
+    input[type="submit"]:active:enabled {
+      box-shadow: 1px 1px 0 0 black inset;
+      border-top-color: #808080;
+      border-left-color: #808080;
+      border-right-color: #dfdfdf;
+      border-bottom-color: #dfdfdf;
+    }
+    #signup {
+      position: absolute;
+      bottom: 27px;
+      right: 21px;
+    }
+    label {
+      line-height: 22px;
+    }
+    form {
+      width: 800px;
+      height: 578px;
+      display: block;
+      background: url('bg2.gif') no-repeat;
+      position: relative;
+      left: 50%;
+      margin-left: -400px;
+      top: 50%;
+      margin-top: -289px;
+    }
+    #inner {
+      padding: 40px;
+      padding-left: 280px;
+    }
+    h1,
+    h2 {
+      text-transform: uppercase;
+    }
+    h2 {
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+  <form method="post" action="https://enron.email">
+    <div id="inner">
+
+      <h1>Sign Up</h1>
+      <h2>To recieve 500,000 emails from the Enron archive</h2>
+
+      <label for="email">Email address:</label>
+      <input type="email" id="email" name="email">
+
+      <div id="timeline-options">
+        <p>How long should your experience last?</p>
+
+        <input type="radio" name="timeline" value="5" id="rb1">
+        <label class="radio" for="rb1"><span></span> 5 days</label>
+
+        <input type="radio" name="timeline" value="30" id="rb2">
+        <label class="radio" for="rb2"> <span></span> 30 days</label>
+
+        <input type="radio" name="timeline" value="365" id="rb3">
+        <label class="radio" for="rb3"> <span></span> 1 year</label>
+
+        <input type="radio" name="timeline" value="2555" id="rb4">
+        <label class="radio" for="rb4"> <span></span> 7 years</label>
+      </div>
+
+      <input type="submit" value="Sign Up" id="signup">
+    </div>
+
+  </form>
+</body>
+
+</html>
