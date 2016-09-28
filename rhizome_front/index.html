@@ -92,6 +92,58 @@
       bottom: 27px;
       right: 90px;
     }
+     input[type="who"] {
+      background: #b0b0b0;
+      border: 1px solid #000;
+      border-top-color: #dfdfdf;
+      border-left-color: #dfdfdf;
+      border-right-color: #808080;
+      border-bottom-color: #808080;
+      box-shadow: 1px 1px 0 0 #000;
+      text-align: center;
+      outline: none;
+      padding: 4px;
+      cursor: default;
+      font-size: 14px;
+    }
+    input[type="who"]:active:enabled {
+      box-shadow: 1px 1px 0 0 black inset;
+      border-top-color: #808080;
+      border-left-color: #808080;
+      border-right-color: #dfdfdf;
+      border-bottom-color: #dfdfdf;
+    }
+        #who {
+      position: absolute;
+      bottom: 27px;
+      right: 240px;
+    }
+    input[type="enron"] {
+      background: #b0b0b0;
+      border: 1px solid #000;
+      border-top-color: #dfdfdf;
+      border-left-color: #dfdfdf;
+      border-right-color: #808080;
+      border-bottom-color: #808080;
+      box-shadow: 1px 1px 0 0 #000;
+      text-align: center;
+      outline: none;
+      padding: 4px;
+      cursor: default;
+      font-size: 14px;
+    }
+    input[type="enron"]:active:enabled {
+      box-shadow: 1px 1px 0 0 black inset;
+      border-top-color: #808080;
+      border-left-color: #808080;
+      border-right-color: #dfdfdf;
+      border-bottom-color: #dfdfdf;
+    }
+        #enron {
+      position: absolute;
+      bottom: 27px;
+      right: 360px;
+    }
     label {
       line-height: 22px;
     }
@@ -149,7 +201,9 @@
       </div>
 
       <input type="submit" value="Sign Up" id="signup">
-         <input type="submit" value="About" id="about">
+         <input type="submit" value="Why would I do this?" id="about">
+          <input type="submit" value="Who made this?" id="who">
+          <input type="submit" value="Enron?" id="enron">
     </div>
 
   </form>
